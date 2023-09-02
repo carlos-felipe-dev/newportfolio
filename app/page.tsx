@@ -49,7 +49,7 @@ export default function Home() {
               <HashtagIcon aria-hidden className="h-6 w-6 fill-white" />
             </Link>
           </h1>
-          <div className="flex flex-wrap mx-auto justify-evenly gap-6 md:gap-0">
+          <div className="flex flex-wrap mx-auto justify-evenly gap-6 md:gap-0 ">
             <div className="max-w-[400px] px-4 sm:px-4">
               <h2 className="uppercase border-b mb-3 font-medium">Technologies</h2>
               <div className="flex flex-wrap gap-3 justify-center mx-auto">
