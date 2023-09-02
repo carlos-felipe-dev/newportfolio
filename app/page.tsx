@@ -89,7 +89,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col md:flex-row border border-neutral-400 rounded-lg overflow-hidden max-h-[700px] mb-8">
             <div className="max-h-[50%] overflow-hidden">
-              <button onClick={() => handleImage('/_next/image?url=%2Fimages%2FweatherAppDesktop.png&w=2048&q=75')}>
+              <button className="h-full" onClick={() => handleImage('/_next/image?url=%2Fimages%2FweatherAppDesktop.png&w=2048&q=75')}>
                 <Image className=" w-full h-auto md:object-cover md:h-full" src='/images/weatherAppDesktop.png' height={1300} width={2000} alt="weather app preview">
                 </Image>
               </button>
@@ -110,13 +110,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row border border-neutral-400 rounded-lg overflow-hidden max-h-[700px] mb-8">
-            <div className="order-2 max-h-[50%] sm:h-auto overflow-hidden">
-              <button onClick={() => handleImage('/_next/image?url=%2Fimages%2FsynapsisDesktop.png&w=2048&q=75')}>
+            <div className="md:order-2 max-h-[50%] sm:h-auto overflow-hidden">
+              <button className="h-full" onClick={() => handleImage('/_next/image?url=%2Fimages%2FsynapsisDesktop.png&w=2048&q=75')}>
                 <Image className="w-full h-auto md:object-cover md:h-full" src='/images/synapsisDesktop.png' height={1300} width={2000} alt="blog app preview">
                 </Image>
               </button>
             </div>
-            <div className="order-1 flex-grow px-6 py-8">
+            <div className="md:order-1 flex-grow px-6 py-8">
               <h3 className="mb-3 text-xl font-bold">Blog App</h3>
               <p className="mb-14">A Next.js and Tailwind CSS powered blog concept featuring animations, hover effects, and a responsive design for an exceptional cross-device user experience.</p>
               <div className="flex items-center justify-between xs:justify-evenly">
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row border border-neutral-400 rounded-lg overflow-hidden max-h-[700px]">
             <div className="max-h-[50%] overflow-hidden">
-              <button onClick={() => handleImage('/_next/image?url=%2Fimages%2FrpsDesktop.png&w=2048&q=75')}>
+              <button className="h-full" onClick={() => handleImage('/_next/image?url=%2Fimages%2FrpsDesktop.png&w=2048&q=75')}>
                 <Image className="w-full h-auto md:object-cover md:h-full" src='/images/rpsDesktop.png' height={1300} width={2000} alt="rock paper scissor lizard spock app preview">
                 </Image>
               </button>
