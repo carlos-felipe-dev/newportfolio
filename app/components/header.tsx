@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { cn } from "../lib/utils";
 
 import { GithubIcon, LinkedinIcon, ResumeIcon } from "./icons";
 
-export default function Header({className, ...props}: React.ComponentProps<'header'>) {
+export default function Header() {
 
 interface ILinks {
   name: string;
@@ -14,7 +13,7 @@ interface ILinks {
   const links: ILinks[] = [
     {
       name: 'Resume',
-      href: 'some pdf',
+      href: '../../CarlosFelipeResume.pdf',
       icon: <ResumeIcon className="h-6 w-6 fill-white"/>,
     },
     {
@@ -31,14 +30,14 @@ interface ILinks {
 
   return (
     <header className='flex items-start justify-between p-4 md:px-8 w-full max-w-6xl'>
-      <button className="uppercase text-start tracking-[-0.04em] leading-[1]">
+      <div className="uppercase text-start tracking-[-0.04em] leading-[1]">
         <span className="font-bold">Carlos Felipe</span>
         <br />
         <span className="font-light">Junior Web Developer</span>
-      </button>
+      </div>
       <ul className="flex items-center gap-1">
         {links.map((link) => (
-          <li>
+          <li key={link.name}>
             <Link href={link.href}>{link.icon}</Link>
             <span className="sr-only">{link.name}</span>
           </li>
