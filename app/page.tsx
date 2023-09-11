@@ -138,7 +138,7 @@ export default function Home() {
               </button>
             </div>
             <div className="flex-grow px-6 py-8">
-              <h3 className="mb-3 text-xl font-bold">Rock Paper Scissors Spock</h3>
+              <h3 className="mb-3 text-xl font-bold">Rock Paper Scissors Lizard Spock</h3>
               <p className="mb-14">An interactive web app built in React, styled with Tailwind CSS, offering an upgraded version of the classic Rock Paper Scissors game, including the choice to play against either a computer or another player.</p>
               <div className="flex items-center justify-between xs:justify-evenly">
                 <Link target="_blank" href='https://spock-rock.vercel.app/' className="flex items text-sm center font-medium gap-2 py-2 px-3 rounded-md bg-neutral-50 text-black hover:opacity-90 transition-opacity">
