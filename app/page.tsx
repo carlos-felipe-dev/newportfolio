@@ -99,13 +99,13 @@ export default function Home() {
               <p className="mb-14">Rebuilt using Next.js and styled with TailwindCSS. Showcases current weather,
                 a five-day forecast, and the functionality to favorite and search locations by pulling data from two separate APIs.</p>
               <div className="flex items-center justify-between xs:justify-evenly">
-                <Link target="_blank" href='https://weather-app-jade-pi.vercel.app/' className="flex items text-sm center font-medium gap-2 py-2 px-3 rounded-md bg-neutral-50 text-black hover:opacity-90 transition-opacity">
+                <Link target="_blank" href='https://weather-app-jade-pi.vercel.app/' className="flex items-center text-sm center font-medium gap-2 py-2 px-3 rounded-md bg-neutral-50 text-black hover:opacity-90 transition-opacity">
                   View project
                   <OpenArrowIcon />
                 </Link>
-                <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
+                {/* <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
                   Learn more
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -124,9 +124,9 @@ export default function Home() {
                   View project
                   <OpenArrowIcon />
                 </Link>
-                <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
+                {/* <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
                   Learn more
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -145,9 +145,9 @@ export default function Home() {
                   View project
                   <OpenArrowIcon />
                 </Link>
-                <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
+                {/* <button className="gap-2 py-2 px-3 rounded-md font-medium hover:bg-zinc-900 transition-colors">
                   Learn more
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

@@ -23,22 +23,22 @@ interface ILinks {
     },
     {
       name: 'GitHub',
-      href: 'https://www.github.com/nauticuff',
+      href: 'https://www.github.com/carlos-felipe-dev',
       icon: <GithubIcon className='h-6 w-6 fill-white' />
     },
   ]
 
   return (
-    <header className='flex items-start justify-between p-4 md:px-8 w-full max-w-6xl'>
-      <div className="uppercase text-start tracking-[-0.04em] leading-[1]">
-        <span className="font-bold">Carlos Felipe</span>
-        <br />
-        <span className="font-light">Junior Web Developer</span>
+    <header className='flex items-center justify-between p-4 md:px-8 w-full max-w-6xl'>
+      <div className="uppercase text-start tracking-[-0.02em] leading-[1]">
+        <p className="font-bold">Carlos Felipe</p>
+        
+        <p className="font-light">Fullstack Web Developer</p>
       </div>
-      <ul className="flex items-center gap-1">
+      <ul className="flex items-center">
         {links.map((link) => (
-          <li key={link.name}>
-            <Link href={link.href}>{link.icon}</Link>
+          <li key={link.name} className="hover:cursor-pointer hover:bg-neutral-800 px-1.5 py-1.5 rounded transition-all">
+            <Link className="" href={link.href}>{link.icon}</Link>
             <span className="sr-only">{link.name}</span>
           </li>
         ))}
